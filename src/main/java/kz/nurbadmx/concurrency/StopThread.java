@@ -3,7 +3,7 @@ package kz.nurbadmx.concurrency;
 import java.util.concurrent.TimeUnit;
 
 public class StopThread {
-    private static boolean stopRequested;
+    private boolean stopRequested;
 
     private synchronized void requestStop() {
         stopRequested = true;
